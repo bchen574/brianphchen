@@ -193,16 +193,20 @@ to{opacity: 1;}
     justify-content: space-between;
     width: 1520px;
     margin: auto;
-    margin-top: 110px;
+    margin-top: 180px;
     margin-bottom: 70px;
 
 }
 
 .covertitle_projectname{
-    display: flex;
+    width: 724px;
+    height: 46px;
+    left: 199px;
+    top: 168px;
+    
     font-family: 'Barlow';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 48px;
     line-height: 58px;
 
@@ -212,11 +216,8 @@ to{opacity: 1;}
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 48px;
-    display: flex;
-    align-items: flex-end;
-    text-align: right;
+    font-size: 24px;
+    line-height: 29px;
 }
 
 .coverpage_container{
@@ -248,13 +249,28 @@ background-color: rgb(255, 255, 255);
 /* -------------------------------------------BODY COLUMNS-----------------------------------------*/
 
 .body_columns{
-    display: flex;
-    margin: auto;
-    margin-top: 160px;
-    justify-content: center;
-    gap: 16px;
-    height: fit-content;
+    display: grid;
+    grid-template-columns: 750px 750px;
+    grid-template-rows: 420px 420px;
+    row-gap: 22px;
+    justify-content: space-between;
+    width: 1520px;
+    height: fit-content
+    background-color: rgb(255, 255, 255);
+    margin:auto;
 
+}
+
+.thumbnail{
+    background-color: blue;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+img{
+    width: 752px;
+    object-fit: contain;
 }
 
 .column1{
@@ -272,105 +288,10 @@ background-color: rgb(255, 255, 255);
     position: -webkit-sticky;
     position: sticky;
     top: 120px;
+
     
 }
 
-
-/* -------------------------------------------STICKY SIDEBAR-----------------------------------------*/
-
-.chapter_heading_container{
-height: fit-content;
-display: flex;
-flex-direction: column;
-gap: 8px;
-}
-
-.chapter_heading{
-    width:fit-content;
-    height: 38px;
-    padding-left: 10px;
-    padding-right: 10px;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    position: relative;
-    margin-left: 6px;
-    border-radius: 18px;
-
-    /*Text Format*/
-   font-family: 'Barlow';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 13px;
-   line-height: 145.5%;
-   color: #868686;
-   text-decoration: none;
-
-}
-
-.chapter_heading::before{
-    content: '';
-    position: absolute;
-    transform: scaleX(0);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    border-color: #ffffff;
-    border-style: solid;
-    border-width: 0px;
-
-}
-
-
-.chapter_heading:hover::before{
-    content: '';
-    position: absolute;
-    transform: scaleX(1);
-    transition: 200ms ease-in-out;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -2;
-    border-style: solid;
-    border-width: .3px;
-    background-color: #F5F5F5;
-    border-radius: 18px;
-
-}
-
-.chapter_heading_top{
-
-    width:fit-content;
-    position:relative
-    height: 40px;
-    padding: 15px;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    border-radius: 30px;
-    text-decoration:underline;
-    text-underline-offset: 8px;
-
-    /*Text Format*/
-   font-family: 'Barlow';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 12px;
-   line-height: 145.5%;
- 
-}
-
-.active{
-    background-color: #F5F5F5;
-    border-radius: 18px;
-    color: rgb(48, 48, 48);
-    font-weight: 500;
-    transition: 300 ease-in-out;
-}
 
 
 
@@ -539,75 +460,7 @@ width: fit-content;
     box-sizing: border-box;
   }
   
-
-
-  @media screen and (max-width: 1600px) {
-
-body{
-display: flexbox;
-align-content: center;
-
-}
-
-.coverpage_container{
-    width: 100%;
-}
-
-.covertitle_container{
-    width: 100%;
-    margin-left: 2%;
-    margin-right: 2%;
-display: flexbox;
-flex-direction: row;
-align-items: flex-start;
-  
-    background-color: blue;
-}
-
-.covertitle_projectname{
-background-color: red;
-
-}
-
-.covertitle_projecttext{
-    background-color: red;
-}
-
-
-    .column2 {
-      display: none;
-      width: 0;
-    }
-
-    .bottom{
-        display: none;
-    }
-
-    .body_columns{
-       width: 100%
-       background-color: red;
-       height: 500px;
-      margin-left: 0;
-      margin-top: 0;
-      margin-right: 0;
-      margin-bottom: 0;
-       display: flex;
-v
-    
-   
-    
-    }
-
-
-
-    .column1{
-        
-    }
-
-    #content{
-        animation: transitionin 0.75s;
-    }
-
-
-
-}
+@media screen and (max-width: 600px) {
+  .column2 {
+    display: none;
+  }

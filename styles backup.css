@@ -557,19 +557,13 @@ align-content: center;
     width: 100%;
     margin-left: 2%;
     margin-right: 2%;
-display: flexbox;
-flex-direction: row;
-align-items: flex-start;
-  
-    background-color: blue;
-}
-
-.covertitle_projectname{
-background-color: red;
-
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
 }
 
 .covertitle_projecttext{
+    
     background-color: red;
 }
 
@@ -598,7 +592,9 @@ v
     
     }
 
-
+.covertitle_container{
+    width: 100%;
+}
 
     .column1{
         

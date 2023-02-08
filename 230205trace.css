@@ -31,7 +31,7 @@ nav {
 
 .navinner{
     display: flex;
-    width: 80%;
+    width: 90%;
     align-items: center;
 
 }
@@ -77,10 +77,6 @@ width: 90%;
 margin: auto;
 display: flex;
 height: fit-content;
-max-width: 1520px;
-
-    
-background-color: rgb(255, 255, 255);
 }
 
 .concept_blurb{
@@ -197,39 +193,44 @@ b {
 .main{
     width: 100%;
     height: fit-content;
-
-    
 }
 
 .wrapper{
-    display: flex;
     width: 100%;
-    
+    height: fit-content;
     }
     
     .stickysidebar{
-   width: 0%;
    visibility: hidden;
     }
     
     #chapter{
-        width: 0%;
         visibility: hidden;
     
     }
     
     #contents{
-        width: 0%;
         visibility: hidden;
     
     }
     
     .active{
-        width: 0%;
         visibility: hidden;
     }
 
+
+
 @media screen and (min-width: 1000px) {
+
+    .spacer{
+        height: 1px;
+        width: 1vw;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(235, 235, 235);
+    }
 
 
 .wrapper{

@@ -190,6 +190,8 @@ b {
    
 }
 
+
+
 .main{
     width: 100%;
     height: fit-content;
@@ -232,6 +234,12 @@ b {
         background-color: rgb(235, 235, 235);
     }
 
+    .cover_image{
+        width: 60%;
+        margin: auto;
+        display: flex;
+        height: fit-content;
+        }
 
 .wrapper{
 display: flex;

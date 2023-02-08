@@ -5,7 +5,7 @@ div { height: 100%; width: 100%;  }
 
 /* -----NAV--------------------*/
 
-nav {
+#navbar {
     width: 100%;
     height: 7%;
     margin:auto;
@@ -19,7 +19,7 @@ nav {
     border-bottom-width: 1px;
     position: sticky;
     top: 0;
-    transition: 300ms ease-in-out;
+    transition: 600ms ease-in-out;
     }
 
 .logocontainer{
@@ -71,12 +71,18 @@ nav {
      font-size: max(40px);
     font-size: 2.5vw;
 }
+.coverimagecontainer{
+    display: flex;
+    height: fit-content;
+
+}
 
 .cover_image{
 width: 90%;
 margin: auto;
 display: flex;
 height: fit-content;
+object-fit:contain;
 }
 
 .concept_blurb{
@@ -300,6 +306,23 @@ visibility:visible;
 
 }
 
+#chapter:hover{
+    width: fit-content;
+    padding: .5vw;
+
+    border-radius: 999px;
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 300;
+    font-size: .6vw;
+    color: #8d8d8d;
+    visibility:visible;
+    background-color: #f7f7f7;
+    transition: 150ms ;
+
+}
+
 #contents{
     width: fit-content;
     padding: .5vw;
@@ -316,6 +339,8 @@ visibility:visible;
     visibility:visible; 
 
 }
+
+
 
 .active{
     background-color: rgb(240, 240, 240);
@@ -338,9 +363,11 @@ text-decoration: none;
 }
 
 
-    nav {
+#navbar {
        
       height: 5%;
+      top: 0%;
+      
     
     }
 
@@ -353,7 +380,7 @@ text-decoration: none;
 
     .navinner{
         display: flex;
-        width: 66%;
+        width: 60%;
         align-items: center;
     
     }

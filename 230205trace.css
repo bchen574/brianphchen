@@ -220,18 +220,20 @@ b {
         visibility: hidden;
     }
 
+  
 
 
 @media screen and (min-width: 1000px) {
 
     .spacer{
         height: 1px;
-        width: 1vw;
+        width: 100%;
         margin-top: 5%;
         margin-bottom: 5%;
         margin-left: auto;
         margin-right: auto;
         background-color: rgb(235, 235, 235);
+        visibility: hidden;
     }
 
     .cover_image{
@@ -241,15 +243,23 @@ b {
         height: fit-content;
         }
 
+.test{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(228, 228, 228);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+        
 .wrapper{
 display: flex;
 justify-content: space-between;
 height: fit-content;
-gap: 11vw;
+gap: 8vw;
 }
 
 .stickysidebar{
-flex-grow: 1;
 width: 40%;
 flex-grow: 1;
 
@@ -261,6 +271,7 @@ gap: 1vh;
 position: sticky;
 top: 9vh;
 margin-top: 9vh;
+visibility:visible;
 }
 
 #chapter{
@@ -274,6 +285,7 @@ margin-top: 9vh;
     font-weight: 300;
     font-size: .6vw;
     color: #b4b4b4;
+    visibility:visible;
 
 }
 
@@ -289,7 +301,8 @@ margin-top: 9vh;
     font-size: .5vw;
     text-decoration: underline;
     text-underline-offset: .8vh;
-    color: #000000;   
+    color: #000000;  
+    visibility:visible; 
 
 }
 
@@ -298,6 +311,7 @@ margin-top: 9vh;
     color: rgb(0, 0, 0) !important;
     font-weight: 400!important;
     transition: 150ms ;
+    visibility:visible;
 }
 
 a {

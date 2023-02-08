@@ -225,6 +225,17 @@ b {
 
 @media screen and (min-width: 1000px) {
 
+    .cover_title_container{
+        height: 9%;
+        width: 60%;
+        margin:auto;
+        display: flex;
+       align-items: center;
+        justify-content: space-between;
+        max-width: 1520px;
+    }
+    
+
     .spacer{
         height: 1px;
         width: 100%;

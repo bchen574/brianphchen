@@ -42,8 +42,6 @@ nav {
 
 /* -------------------------------------------COVER PAGE-----------------------------------------*/
 
-
-
 .cover_title_container{
     height: 9%;
     width: 90%;
@@ -95,6 +93,8 @@ background-color: rgb(255, 255, 255);
 
 }
 
+/* -------------------------------------------TEXT-----------------------------------------*/
+
 h1{
 
     font-family: 'Barlow';
@@ -127,7 +127,13 @@ font-size: 2.6vw;
 color: #646464; 
 }
 
+b {
 
+    font-weight: 500;
+    color: black;
+}
+
+/* ------------------------------------------TEXTBOXES-----------------------------------------*/
 .textbox{
     display: flex;
     flex-direction: column;
@@ -146,6 +152,7 @@ color: #646464;
 
 }
 
+/* ------------------------------------------GIF AND TEXT-----------------------------------------*/
 .gif{
     width: 35%;
 }
@@ -155,6 +162,7 @@ color: #646464;
     margin-top: 10%;
 }
 
+/* ------------------------------------------IMG-----------------------------------------*/
 .img_full{
     width: 100%;
     margin-top: 5%;
@@ -173,6 +181,8 @@ color: #646464;
 
 }
 
+
+/* ------------------------------------------SPACER-----------------------------------------*/
 .spacer{
     height: 1px;
     width: 100%;
@@ -184,6 +194,210 @@ color: #646464;
    
 }
 
-@media screen and (max-width: 1000px) {
+.main{
+    width: 100%;
+    height: fit-content;
 
-   
+    
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    
+    }
+    
+    .stickysidebar{
+   width: 0%;
+   visibility: hidden;
+    }
+    
+    #chapter{
+        width: 0%;
+        visibility: hidden;
+    
+    }
+    
+    #contents{
+        width: 0%;
+        visibility: hidden;
+    
+    }
+    
+    .active{
+        width: 0%;
+        visibility: hidden;
+    }
+
+@media screen and (min-width: 1000px) {
+
+
+.wrapper{
+display: flex;
+justify-content: space-between;
+height: fit-content;
+gap: 11vw;
+}
+
+.stickysidebar{
+flex-grow: 1;
+width: 40%;
+flex-grow: 1;
+
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+gap: 1vh;
+
+position: sticky;
+top: 9vh;
+margin-top: 9vh;
+}
+
+#chapter{
+    width: fit-content;
+    padding: .5vw;
+
+    border-radius: 999px;
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 300;
+    font-size: .6vw;
+    color: #b4b4b4;
+
+}
+
+#contents{
+    width: fit-content;
+    padding: .5vw;
+
+    border-radius: 999px;
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 300;
+    font-size: .5vw;
+    text-decoration: underline;
+    text-underline-offset: .8vh;
+    color: #000000;   
+
+}
+
+.active{
+    background-color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0) !important;
+    font-weight: 400!important;
+    transition: 150ms ;
+}
+
+a {
+color: inherit;
+text-decoration: none;
+
+}
+
+.main{
+    width: 60%;
+    height: fit-content;
+    
+}
+
+
+    nav {
+       
+      height: 5%;
+    
+    }
+
+    .logocontainer{
+        display: flex;
+        height: 50%;
+        align-items: center;
+    
+    }
+
+    .navinner{
+        display: flex;
+        width: 66%;
+        align-items: center;
+    
+    }
+
+    .cover_title_container{
+        height: 15%;
+       
+    }
+    
+    .cover_title_name{
+        font-size: 2vw;  
+    }
+    .cover_title_text{
+        font-size: 1.9vw;
+    }
+
+
+    .textbox{
+        width: 100%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    .textbox2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5%;
+    
+    }
+    
+    
+
+
+
+    h1{
+        font-size: 1.1vw;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+
+    
+    
+    h2{
+    
+        
+        font-weight: 500;
+        font-size: 1.1vw;
+    }
+    
+    h3{
+        font-size: 2vw;
+        margin-bottom: 8%;
+       
+    }
+
+    p{
+    
+  line-height: 150%;
+    font-size: .8vw;   
+  
+    }
+
+    .spacer{
+        height: 1px;
+        width: 50%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        
+       
+    }
+    
+    .gif{
+        width: 32%;
+    }
+    
+    .img_medium{
+        width: 75%;
+      
+    }
+}

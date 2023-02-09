@@ -43,13 +43,17 @@ div { height: 100%; width: 100%;  }
 /* -------------------------------------------COVER PAGE-----------------------------------------*/
 
 .cover_title_container{
-    height: 9%;
+    height: fit-content;
     width: 90%;
     margin:auto;
     display: flex;
+    flex-wrap:wrap;
+    gap: 3vh;
+    flex-direction: column;
    align-items: center;
     justify-content: space-between;
     max-width: 1520px;
+    padding: 6vw;
 }
 
 .cover_title_name{
@@ -58,7 +62,7 @@ div { height: 100%; width: 100%;  }
     font-style: normal;
     font-weight: 500;
     font-size: max(48px);
-    font-size: 3vw;  
+    font-size: 7vw;  
 
 
 }
@@ -69,16 +73,17 @@ div { height: 100%; width: 100%;  }
     font-weight: 400;
     height: fit-content;
      font-size: max(40px);
-    font-size: 2.5vw;
+    font-size: 5vw;
 }
 .coverimagecontainer{
     display: flex;
     height: fit-content;
+    justify-content: center;
     
 }
 
 .cover_image{
-    width: 100vw;
+    width: 130vw;
     object-fit: contain;
 }
 
@@ -99,7 +104,7 @@ h1{
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 300;
-    font-size: 2.8vw;
+    font-size: 5vw;
 }
 
 h2{
@@ -107,7 +112,7 @@ h2{
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 500;
-    font-size: 2.7vw;
+    font-size: 4vw;
 }
 
 h3{
@@ -119,10 +124,12 @@ h3{
 }
 p{
 
-font-family: 'Barlow';
+font-family: 'Roboto';
 font-style: normal;
 font-weight: 300;
-font-size: 2.6vw;   
+font-size: 3.8vw;
+line-height: 150%; 
+letter-spacing: 110%;  
 color: #646464; 
 }
 
@@ -245,6 +252,8 @@ b {
         width: 60%;
         margin:auto;
         display: flex;
+        flex-direction: row;
+        padding: 0;
        align-items: center;
         justify-content: space-between;
         max-width: 1520px;

@@ -78,13 +78,15 @@ div { height: 100%; width: 100%;  }
 .coverimagecontainer{
     display: flex;
     height: fit-content;
-    justify-content: center;
+    width: fit-content;
     
 }
 
 .cover_image{
-    width: 130vw;
-    object-fit: contain;
+    width: 100%;
+    object-fit:cover;
+    left: 0;
+    right: 0;
 }
 
 .concept_blurb{

@@ -23,7 +23,7 @@ div {
   justify-content: space-between;
   width: 100vw;
   height: 50px;
-  border-bottom: #ececec;
+  border-bottom: #d6d6d6;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   position: sticky;
@@ -86,7 +86,7 @@ display: flex;
  width: 100vw;
  right: 0;
  left: 0;
- top: 7vh;
+ top: 50px;
  box-sizing: border-box;
  border-bottom: #c0c0c0;
  border-bottom-style: solid;
@@ -98,19 +98,7 @@ display: flex;
 }
 
 .mobile_navbarlinkscontainer.active{
-display: flex;
- flex-direction: column;
- justify-content: space-between;
- height: 100px;
- position: absolute;
- width: 100vw;
- right: 0;
- left: 0;
- top: 7vh;
- box-sizing: border-box;
- border-bottom: #c0c0c0;
- border-bottom-style: solid;
- border-bottom-width: 1px;
+
  visibility: visible;
  transform: scaleY(1);
  transition: 200ms ease-in-out;

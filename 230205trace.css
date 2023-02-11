@@ -343,7 +343,6 @@ b {
   .cover_image {
     object-fit: cover;
     width: fit-content;
-    background-color: red;
     width: 60vw;
   }
 

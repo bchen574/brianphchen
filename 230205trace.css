@@ -489,7 +489,9 @@ b {
  
  
   }
-
+  .hambuger-lines{
+    visibility: hidden;
+  }
   
 
   .navbar_container2 {

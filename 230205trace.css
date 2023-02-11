@@ -49,8 +49,8 @@ div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20%;
-  padding: 2.5%;
+  gap: 5px;
+  padding: 8px;
   box-sizing: border-box;
   align-items: center;
   position: absolute;
@@ -61,7 +61,7 @@ div {
 
 .hambuger-lines{
   height: 2px;
-  width: 90%;
+  width: 100%;
   background-color: rgb(0, 0, 0);
 }
 
@@ -333,6 +333,10 @@ b {
   visibility: hidden;
 }
 
+
+
+
+
 @media screen and (min-width: 1000px) {
   .coverimagecontainer {
     display: flex;
@@ -482,7 +486,7 @@ b {
     position: sticky;
     top: 0;
     background-color: white;
-    transition: 200ms ease-in-out;
+    transition: 700ms ease-in-out;
  position: sticky;
  visibility: visible;
 
@@ -560,16 +564,21 @@ b {
     padding-left: 10px;
     padding-right: 10px;
     position: relative;
-    background-color: white;
     box-sizing: content-box;
+  }
+
+  .navbarlinkconstainerinneroff:after {
+    content: '';
+    background-color: red;
+    z-index: 3;
   }
 
 
   .navbarlinkconstainerinneroff:hover {
     display: flex;
-    border-bottom: #b3b3b3;
+    border-bottom: #949494;
     border-bottom-style: solid;
-    border-bottom-width: 1px;
+    border-bottom-width: .5px;
     padding-left: 10px;
     padding-right: 10px;
     box-sizing: border-box;

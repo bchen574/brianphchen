@@ -581,7 +581,6 @@ b {
     border-bottom-width: .5px;
     padding-left: 10px;
     padding-right: 10px;
-    box-sizing: border-box;
     position: relative;
     transition: 350ms ease-in-out;
     background-color: white;

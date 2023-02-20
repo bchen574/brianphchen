@@ -451,8 +451,8 @@ b {
   }
 
   .active {
-    background-color: rgb(255, 246, 213);
-    color: rgb(0, 0, 0) !important;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255) !important;
     font-weight: 400 !important;
     transition: 150ms;
     visibility: visible;
@@ -489,6 +489,7 @@ b {
     transition: 700ms ease-in-out;
  position: sticky;
  visibility: visible;
+ top: 0;
 
  
  

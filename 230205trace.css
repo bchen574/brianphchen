@@ -45,7 +45,7 @@ div {
 
 .hamburger{
   height: 50px;
-  width: 50px;
+  width: 45px;
   display: flex;
   flex-direction: column;
   justify-content: center;
